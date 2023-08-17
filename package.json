@@ -1,0 +1,44 @@
+{
+  "name": "homey.mystrom",
+  "description": "Adds support for myStrom devices.",
+  "engines": {
+    "node": ">=12.22"
+  },
+  "main": "app.js",
+  "scripts": {
+    "debug": "homey app run",
+    "debug:remote": "npm run debug -- --remote",
+    "start": "npm install && homey app install",
+    "build": "homey app build",
+    "publish": "homey app publish",
+    "eslint": "eslint",
+    "update:myHomey": "npm uninstall my-homey && npm install github:cgHome/homey.my-homey#master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgHome/ch.mystrom.smarthome.git"
+  },
+  "keywords": [
+    "Smarthome",
+    "homey",
+    "myStrom-SmartHome",
+    "ch.myStrom.smarthome"
+  ],
+  "author": "Chris Gross <cgHome@cflat-inc.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgHome/homey.myStrom/issues"
+  },
+  "homepage": "https://homey.app/a/ch.mystrom.smarthome",
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.11",
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.4",
+    "@types/node": "^20.2.5",
+    "eslint": "^8.41.0",
+    "eslint-config-athom": "^3.1.1"
+  },
+  "dependencies": {
+    "bonjour": "^3.5.0",
+    "my-homey": "github:cgHome/homey.my-homey#master"
+  }
+}
